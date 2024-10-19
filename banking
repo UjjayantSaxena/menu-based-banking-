@@ -1,0 +1,111 @@
+#include <stdio.h>
+int main(){
+int select;
+printf("choose your account\n");
+printf("Account 1\n");
+printf("Account 2\n");
+printf("Account 3\n");
+scanf("%d", &select);
+switch(select){
+case 1:{
+int a;
+	printf("perss 1 for balance check \n");
+    printf("press 2 for depositing\n");
+    printf("press 3 for withdrawal\n");
+	scanf("%d",&a);
+	switch(a){
+		case 1:{
+			printf("your available balance is Rs. 2\n");
+			break;
+		}
+		case 2:{
+			int r;
+			printf("enter your amount\n");
+			scanf("%d", &r);
+			printf("now your balance is %d", r+2);
+			break;
+		}
+		case 3:{
+			int s;
+			printf("enter amount for withdrawal\n");
+			scanf("%d", &s);
+			if(s<=2){
+				printf("Rs. %d has been withrawed\n", s);
+	            printf("now your available balance is %d\n",2-s);
+			}else{
+				printf("insufficient balance\n");
+			}
+			break;
+		}
+	}   
+	break;
+}
+case 2:{
+int b;
+	printf("perss 1 for balance check \n");
+    printf("press 2 for depositing\n");
+    printf("press 3 for withdrawal\n");
+	scanf("%d",&b);
+	switch(b){
+		case 1:{
+			printf("your available balance is Rs. 2\n");
+			break;
+		}
+		case 2:{
+			int t;
+			printf("enter your amount\n");
+			scanf("%d", &t);
+			printf("now your balance is %d", t+2);
+			break;
+		}
+		case 3:{
+			int u;
+			printf("enter amount for withdrawal\n");
+			scanf("%d", &u);
+			if(u<=2){
+				printf("Rs. %d has been withrawed\n", u);
+	            printf("now your available balance is %d\n",2-u);
+			}else{
+				printf("insufficient balance\n");
+			}
+			break;
+		}
+	}   
+	break;
+}
+case 3:{
+int c;
+	printf("perss 1 for balance check \n");
+    printf("press 2 for depositing\n");
+    printf("press 3 for withdrawal\n");
+	scanf("%d",&c);
+	switch(c){
+		case 1:{
+			printf("your available balance is Rs. 2\n");
+			break;
+		}
+		case 2:{
+			int v;
+			printf("enter your amount\n");
+			scanf("%d", &v);
+			printf("now your balance is %d", v+2);
+			break;
+		}
+		case 3:{
+			int w;
+			printf("enter amount for withdrawal\n");
+			scanf("%d", &w);
+			if(w<=2){
+				printf("Rs. %d has been withrawed\n", w);
+	            printf("now your available balance is %d\n",2-w);
+			}else{
+				printf("insufficient balance\n");
+			}
+			break;
+		}
+	}   
+	break;
+}
+}
+return 0;
+}
